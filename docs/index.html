@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Chrome Extension,Twitter Reactions">
+  <meta name="description" lang="en"content="Chrome Extension that will show people’s
+reactions on twitter to the article you are reading">
+  <meta name="description" lang="ja" content="今読んでいる記事のツイッターの反応を見ることができるChrome拡張機能です。は●ブのツイッター版みたいなものと思って頂いて大丈夫です。">
+  <meta>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+  <script src="https://unpkg.com/glottologist"></script>
+
+  <title>Twitter Reactions - Chrome Extension</title>
+</head>
+<body>
+  <div class="container">
+    <div class="description">
+      <img src="logo.png" alt="">
+      <h1 class="title">
+        Twitter Reactions
+      </h1>
+      <p glot-model="description">Chrome Extension that will show people’s
+  reactions on twitter to the article you are reading</p>
+    </div>
+    <div class="store">
+        <a href="https://chrome.google.com/webstore/detail/twitter-reactions/khefpplpdfbinclbideeaojljhoakmbe">
+          <img src="store.png" alt="">
+        </a>
+    </div>
+    <div class="developed">
+      Developed by shuent
+      <a href="https://twitter.com/shuent_y"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/shuent"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="video">
+      <iframe width="560" height="700" src="https://www.youtube-nocookie.com/embed/?listType=playlist&list=PLrAQV50IwYKT3UPkPytgJ2UmOfodIdFnw&controls=0&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const glot = new Glottologist();
+    glot.import("/lang.json").then(()=>{glot.render()});
+  </script>
+
+</body>
+</html>

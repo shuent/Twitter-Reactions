@@ -1,0 +1,59 @@
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(225deg, #B1F2FD, #0076BA) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: 2fr 1fr auto;
+  grid-template-areas:
+    "description video"
+    "store video"
+    "developed video";
+  column-gap: 5rem;
+}
+
+.description {
+  grid-area: description;
+  position: relative;
+}
+.description > h1 {
+  margin: 0;
+  font-size: 5rem;
+}
+.description > img {
+  position: absolute;
+  right: 2rem;
+  top: 0rem;
+  width: 100px;
+
+}
+
+.store {
+  gird-area: store;
+
+}
+
+.store > img {
+  width: 100%;
+}
+
+.developed {
+  grid-area: developed;
+  text-align: right;
+}
+
+.video {
+  grid-area: video;
+}
+.video > iframe {
+  width: 100%;
+}
